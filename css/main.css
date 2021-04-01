@@ -1,0 +1,907 @@
+
+/*  
+
+====== ANCHOR main.css ======
+	
+	01) Header Section	
+	02) Home Section
+	03) Studio Section
+	04) Banner Section
+	05) Team Section 
+	06) Work Section
+	07) Conventions Section
+	08) Contact Section
+	09) Footer
+    10) Media Queries
+
+=============================
+		
+*/
+
+body {
+	color: #666;	
+	font-family: Arial,sans-serif;
+	margin: 0;
+	padding: 0;		
+}
+
+a,span,i {
+	-webkit-transition: all 0.7s ease 0s;
+	-moz-transition: all 0.7s ease 0s;
+	-ms-transition: all 0.7s ease 0s;
+	-o-transition: all 0.7s ease 0s;
+	transition: all 0.7s ease 0s;
+}
+
+p{
+	color: #666;
+	font-size: 16px;
+	line-height: 25px; 	
+	letter-spacing: 1px;
+}
+
+.preloader_title h2, .site_name h1, .home-slogan h2, figure.effect-bubba h2{
+	font-family: 'baron_neueregular';
+}
+
+p, nav#navigation li, .section_title h2, #banner h2, .contact_title h2{
+	font-family: 'benthamregular';
+}
+
+.studio_history h3, .story_title h3, #banner p, .about_artist h3, .convention h3, .contact_details h2, .contact_details h3, .contact_details p{
+    font-family: 'latoregular';
+}
+
+.caption h4, span.convention_date {
+    font-family: 'latoitalic'; 
+} 
+
+
+/* Start Preloader ===================================== */
+
+ #preloader{
+	background:#fff;
+	display: table;
+	height: 100%;
+	position:fixed;
+	width: 100%;
+	z-index: 10000;
+}
+
+.preloader_title{
+	display: table-cell;
+    vertical-align: middle; 
+}
+
+.preloader_title h2{
+	color: #000;
+	font-size: 48px;
+	text-align: center;
+}
+
+/* End Preloader ====================================== */
+
+
+
+/* Start Wrapper ====================================== */
+
+#wrapper{
+	position:relative;
+	width:100%;
+	overflow-x:hidden;
+}
+
+/* End wrapper ======================================== */
+
+
+
+/* Start Header Section =============================== */
+
+#header{
+	position: fixed;
+	width: 100%;
+	z-index: 1000;	
+}
+
+.toggle_header{
+	background: #000;
+	display: none;
+	padding: 15px 0;	
+}
+
+.site_name a{
+	text-decoration: none !important;
+}
+
+.site_name h1{
+	color: #fff;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+nav#navigation{
+   text-align: center; 
+}
+
+nav#navigation li{
+   display: inline;
+   margin:  0 15px;
+}
+
+nav#navigation li a{
+   color: #fff;
+   font-size: 22px;	
+   text-decoration: none;
+}
+
+nav#navigation li a:hover{
+	color: #888; 	
+}
+
+.nav-btn{
+	color:#00b4ff; 	
+    text-align:center;
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+    width: 3%;   
+    font-size: 24px; 
+}
+
+.nav-btn i:hover{
+  font-size: 30px;
+  cursor: pointer;	
+}
+
+#navigation, .social{
+	margin-top: 20px;
+} 
+
+.social ul{
+	padding: 0;
+}
+
+.social ul li{
+    display: inline;
+}
+
+.social ul li a{
+	color: #fff;
+	font-size: 24px;
+    text-decoration: none;
+}
+
+.social ul li a:hover{
+	color: #888;
+}
+
+/* End Header Section ================================= */
+
+
+
+/* Start Section Title ================================ */
+
+.section_title{
+	width: 100%;
+	margin: 90px 0 50px;
+}
+
+.section_title h2,.contact_title h2{
+	color: #000;
+	font-size: 60px;
+	margin: 0;
+	text-align: center;
+}
+
+.section_title hr,.contact_title hr{
+	background-color: #eee;
+	border: none;
+	color: #eee;
+	height: 3px;
+	margin: 0 auto;
+	width: 7%;
+}
+
+/* End Section Title ================================== */
+
+
+
+/* Start Home Section ================================= */
+
+#home{
+	background: url("../images/bg_home.jpg")no-repeat center center fixed;
+	-webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	padding: 210px 0;
+	width: 100%;	
+}
+
+img.logo{
+	position: relative;
+	margin: 20px auto;	
+}
+
+.home-slogan h2{
+	position: relative;
+	color: #fff;	
+	font-size: 74px;
+	margin: 0;
+	text-align: center;		
+}
+
+p.established {
+	color: #fff;
+	font-size: 24px;	
+	margin-top: 30px;
+}
+
+/* End Home Section ===================================== */
+
+
+
+/* Start Studio Section ================================= */
+
+
+#studio{
+	padding-bottom: 130px;
+	width: 100%;
+}
+
+.studio_history{
+	border-right:1px solid #eee;
+	padding-bottom: 81px;
+	padding-top: 100px;
+}
+
+.studio_history h3{
+	color: #000;
+	font-size: 36px;
+	padding: 5px 0 ; 
+    font-weight: 400;	
+}
+
+.studio_history p{
+	padding-right: 15px;
+}
+
+.story{
+	margin-top: 60px;
+}
+
+.story_title{
+	margin-top: 80px;
+}
+
+.story_title h3{
+	color: #fff;	
+	display: inline;
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 50px;
+    background: #000;	
+}
+
+.story p{	
+	margin-top: 20px;
+}
+
+/* End Studio Section ================================= */
+
+
+
+/* Start Banner Section =============================== */
+
+#banner{	
+	background: url("../images/bg_banner.jpg")no-repeat center center fixed;
+	-webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	width: 100%;
+    padding: 60px 0;
+}
+
+#banner h2{
+	color:#fff;
+	font-size: 60px; 
+	font-style: italic;
+	text-align: center;
+}
+
+#banner p{
+	color: #fff;	
+	font-size: 36px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+/* End Banner Section ================================= */
+
+
+
+/* Start Team Section ================================= */
+
+#team{
+	background: #fafafa;
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 100px;
+	width: 100%;
+}
+
+.about_artist{
+	background: #fff;
+	margin-top: 15px;
+	padding-bottom: 20px;
+	
+}
+
+.about_artist img{
+	padding: 15px 15px 0 15px;
+}
+
+.about_artist h3{
+	color: #000;
+	font-size: 30px;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.about_artist p{
+	padding: 0 15px;
+	text-align: center;
+    margin-top: 20px;
+}
+
+.social_artist ul{
+	margin: 25px 0;
+	text-align: right;
+    padding-right: 15px;
+}
+
+.social_artist ul li{
+    display: inline;
+}
+
+.social_artist ul li a{
+	color: #000;
+	font-size: 22px;
+	text-decoration: none;
+}
+
+.social_artist ul li a:hover{
+	color: #888;
+}
+
+/* End Team Section ========================================== */
+
+
+
+/* Start Work Section ======================================== */
+
+#work{	
+	width: 100%;
+    padding-bottom: 20px;
+}
+		
+#work .col-md-3{
+	padding:0;
+}
+
+.caption{
+	width: 60%;
+	border-bottom: 1px solid #efefef;
+	border-top: 1px solid #efefef;
+	padding: 20px 0;
+	margin: 0 auto 70px;
+}
+
+.caption h4{
+	color: #666;
+	font-size: 24px;
+	text-align: center;
+    margin: 0;
+}
+
+
+//* Common figure style */
+ .thumbnail_container figure {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+ .thumbnail_container figure img {
+  position: relative;
+  margin: 0;
+  display: block;
+  opacity: 0.8;
+}
+
+ .thumbnail_container figure figcaption {
+  padding: 0;
+  color: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.thumbnail_container figure figcaption::before,
+ .thumbnail_container figure figcaption::after {
+  pointer-events: none;
+}
+
+.thumbnail_container figure figcaption,
+ .thumbnail_container figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.thumbnail_container figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.thumbnail_container figure h2 {
+    margin: 0;
+	text-align: center;
+}
+
+
+/* Individual effects */
+
+
+/***** Bubba *****/
+/*---------------*/
+
+figure.effect-bubba {
+	background: #000;
+}
+
+figure.effect-bubba img {
+	opacity: 1;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.3;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+figure.effect-bubba h2 {
+	vertical-align: center;
+	font-size: 28px;
+	padding-top: 30%;
+	opacity: 0;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+}
+
+figure.effect-bubba p {
+	color: #fff;
+	padding: 20px 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+
+/* End Work Section ========================================== */
+
+
+
+/* Start Conventions Section ================================= */
+
+#conventions{
+	padding-bottom: 100px;
+	width: 100%;
+}
+
+.convention{
+	margin-bottom: 10px;
+}
+
+.convention img{
+	margin-bottom: 20px;
+}
+
+.convention h3{
+	color: #666;
+	margin-top: 0; 
+	font-size: 32px;
+}
+
+span.convention_date{
+	color: #999;
+	font-size: 18px;
+}
+
+.convention p{
+	margin-top: 5px;
+	padding: 20px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	margin-bottom: 10px;
+	letter-spacing: 1px;
+}
+
+.convention a{
+	background: #fff;
+	border: 2px solid #000;
+	color: #000;
+	display: inline;
+	font-size: 16px;
+	float: right;
+	margin-top: 15px;
+	padding: 7px 25px;
+	text-decoration: none !important;
+}
+
+.convention a:hover{
+	background: #000;
+	border: 2px solid #000;
+	color: #fff;
+}
+
+/* End Conventions Section =================================== */
+
+
+
+/* Start Contact Section ====================================== */
+
+#contact{
+	background: url("../images/bg_contact.jpg")no-repeat center center fixed;	
+	-webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+	padding: 90px 0 210px;
+	width: 100%; 
+}
+
+.contact_title h2{
+	color: #fff;
+}
+
+.contact_title hr{
+	background-color: #fff;
+	color: #fff;
+}
+
+.contact_details{
+	background: rgba(255,255,255,0.7);
+	color: #fff;
+	margin-top: 70px;
+	padding: 40px 0 0;
+	text-align: center;
+}
+
+.contact_details h2{
+	color: #000;
+	font-size: 48px;
+	margin: 20px 0 0;
+}
+
+.contact_details span{
+    color: #000;
+    font-size: 24px;
+}
+
+
+.contact_details h3{
+	background:#000;
+	color:#fff ;
+	font-size: 36px;
+	padding: 10px 0;
+	width: 40%;
+    margin: 30px auto 0;
+}
+
+.contact_details a{
+	color: #ff3333;
+	text-decoration:none !important;
+}
+
+/* End Contact Section ======================================== */
+
+
+
+/* Start Footer =============================================== */
+
+#footer{
+	background: #f8f8f8;
+	border-top: 1px solid #eee;
+	margin:40px 0 0;
+	padding: 40px 0 ;
+	text-align: center;
+}
+
+#footer p{
+	font-size: 14px;
+	margin: 0;
+}
+
+#footer ul{
+	margin: 0;
+}
+
+#footer ul li{
+	display: inline;
+}
+
+#footer ul li a{
+	color: #000;
+	font-size: 24px;
+	text-align: right;
+	text-decoration: none;
+}
+
+#footer ul li a:hover{
+    color: #888;
+}
+
+/* End Footer ================================================= */
+
+
+
+/* -------------------- Media queries ------------------------ */
+
+
+/* Large Devices, Wide Screens =============================== */
+
+@media screen and (min-width: 993px) and (max-width: 1200px){
+
+nav#navigation li{margin:  0 10px;}
+  
+#header .col-md-2{padding: 0;}
+
+.site_name h1{margin-left: 10px;}
+
+#home{background-attachment: scroll; padding: 150px 0;}
+
+.section_title{margin: 55px 0;}
+
+#studio{padding-bottom: 100px;}
+
+.studio_history{padding-bottom: 59px; padding-top: 30px;}
+
+.story_title{margin-top: 40px;}
+
+#banner{background-attachment: scroll; padding: 40px 0;}
+
+figure.effect-bubba h2 { font-size: 24px; }
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {top: 10px; right: 10px; bottom: 10px; left: 10px;}
+
+#contact{background-attachment: scroll; padding: 55px 0;}
+
+.contact_details h3{width:50%;}
+
+}
+
+/* ========================================================== */ 
+
+
+
+/* Medium Devices, Desktops ================================= */
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+.site_name{text-align: center;}
+
+nav#navigation ul{ text-align: center; padding: 0;}
+nav#navigation li{ display:block; margin-top: 10px;}
+ 
+.social ul{text-align: center;}
+
+.section_title{margin: 55px 0; }
+
+#home{background-attachment: scroll;}
+
+#studio{padding-bottom: 80px;}
+
+.studio_history{padding: 0px; border-right:none; border-bottom: 1px solid #eee;}
+.studio_history p{padding-right: 85px; margin-bottom: 35px;}
+
+.story{margin-top:10px;}	
+.story p{padding-right: 85px;}
+
+.story_title{ margin-top: 35px; padding-right: 250px;}
+
+#banner{ background-attachment: scroll; padding: 30px 0;}	
+
+#team{padding-bottom: 80px;}
+
+.caption{margin-bottom: 40px;}
+
+#conventions{padding-bottom: 10px;}
+
+.convention{margin-bottom: 90px;}
+.convention p{padding-right: 50px;}	
+
+#contact{background-attachment: scroll; padding: 55px 0;}	
+
+.contact_details h3{width:65%;}
+
+}
+
+/* ======================================================== */ 
+
+
+
+/* Small Devices, Tablets ================================= */
+
+@media screen and (min-width:481px) and (max-width: 767px){
+
+.site_name{text-align: center;}
+
+nav#navigation ul{ text-align: center;  padding: 0;}
+nav#navigation li{ display:block; margin-top: 10px;}
+
+.social ul{text-align: center;}
+
+.nav-btn{margin-top: 5px; margin-right: 30px;}
+	
+#home{padding: 90px 0 175px;}
+
+.home-slogan img{width: 23%;margin: 5px auto;}
+
+.section_title{margin: 60px 0 45px;}
+
+#studio{padding-bottom: 60px;}
+	
+.studio_history{padding: 0; border-right:none;  border-bottom: 1px solid #eee;}
+.studio_history p{margin-bottom: 35px;}
+
+.story{margin-top:10px;}
+
+.story_title{ margin-top: 35px;}
+.story_title h3{line-height: 36px;}
+
+#banner{background-attachment: scroll; padding: 30px;}	
+#banner h2{font-size: 36px!important;}
+
+#team{padding-bottom: 30px;}
+
+.about_artist{padding-bottom: 5px;}
+
+.caption{margin-bottom: 30px;}
+.caption h4{font-size: 20px;}
+
+#conventions{padding-bottom: 20px;}
+
+.convention{margin-bottom: 90px;}
+.convention h3{font-size: 20px;}
+
+#contact{background-attachment: scroll; padding: 60px 0 45px;}
+
+.contact_details h2{font-size: 32px;}
+.contact_details h3{width: 60%; font-size: 24px;}
+.contact_details p{font-size: 14px; line-height: 22px; padding-right: 10px;}
+.contact_details span{font-size: 18px;}
+
+#footer{padding: 20px 0 ;}
+#footer ul{padding: 0;}
+	
+}
+
+/* ========================================================== */ 
+
+
+
+/* Extra Small Devices, Phones ============================= */ 
+
+@media screen and (max-width: 480px){
+
+.site_name{text-align: center;}
+
+nav#navigation ul{ text-align: center;  padding: 0;}
+nav#navigation li{ display:block; margin-top: 10px;}
+
+.social ul{padding: 0; text-align: center;}
+
+.nav-btn{margin-top: 5px;margin-right: 30px;}
+	
+#home{padding: 90px 0 175px; background-attachment: scroll;}
+
+img.logo{width: 35%; margin: 5px auto;}
+
+.section_title{margin: 50px 0 35px; }
+
+#studio{padding-bottom: 60px;}
+	
+.studio_history{padding: 0px; border-right:none; border-bottom: 1px solid #eee;}
+.studio_history p{margin-bottom: 15px;}
+
+.story{margin-top: 10px;}
+
+.story_title{ margin-top: 15px;}
+.story_title h3{line-height: 36px;}
+
+#banner{background: #000; padding: 30px;}	
+
+#team{padding-bottom: 30px;}
+
+.about_artist{padding-bottom: 5px;}
+
+.caption{margin-bottom: 30px;}
+.caption h4{font-size: 15px;}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {top: 10px; right: 10px; bottom: 10px; left: 10px;}
+
+#conventions{padding-bottom: 20px;}
+
+.convention{margin-bottom: 90px;}
+.convention h3{font-size: 20px;}
+
+#contact{padding: 50px 0 35px; background-attachment: scroll;}
+
+.contact_details h2{font-size: 32px;}
+.contact_details h3{width: 90%; font-size: 24px;}
+.contact_details p{font-size: 14px; line-height: 22px; padding-right: 10px;}
+.contact_details span{font-size: 18px;}
+
+#footer{padding: 20px 0 ;}
+#footer ul{padding: 0;}
+	
+}
+
+/* ========================================================== */ 
